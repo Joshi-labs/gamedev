@@ -25,3 +25,26 @@
   background: #55ACEE;
   color: white;
 }
+
+.fa-youtube {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #55ACEE;
+  color: white;
+
+}
+
+.fa-github {
+  background: #55ACEE;
+  color: white;
+
+}
+
+.grid{
+display: grid;
+  place-items:center;
+
+}
