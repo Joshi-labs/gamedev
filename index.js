@@ -68,7 +68,7 @@ window.onload = function() {
 
       title.setAttribute('id', 'title')
 
-      title.textContent = 'MemeChat 2.0'
+      title.textContent = 'APS Talks Yo!'
 
 
       title_inner_container.append(title)
@@ -120,7 +120,7 @@ window.onload = function() {
 
       join_input.setAttribute('maxlength', 15)
 
-      join_input.placeholder = 'No.... It\'s Patrick Star'
+      join_input.placeholder = 'Pelha apna name daal sale...lawda! '
 
       // Every time we type into the join_input
 
@@ -334,7 +334,7 @@ window.onload = function() {
 
       chat_logout.setAttribute('id', 'chat_logout')
 
-      chat_logout.textContent = `${parent.get_name()} • logout`
+      chat_logout.textContent = `${parent.get_name()} â€¢ logout`
 
       // "Logout" is really just deleting the name from the localStorage
 
