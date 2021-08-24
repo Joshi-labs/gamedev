@@ -120,7 +120,7 @@ window.onload = function() {
 
       join_input.setAttribute('maxlength', 15)
 
-      join_input.placeholder = 'Pelha apna name daal sale...lawda! '
+      join_input.placeholder = 'Pehale apna name daal sale...lawda! '
 
       // Every time we type into the join_input
 
