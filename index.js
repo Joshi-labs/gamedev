@@ -276,7 +276,7 @@ window.onload = function() {
 
       // Get the name of the user
 
-      chat_input.placeholder = `${parent.get_name()}. Say something...`
+      chat_input.placeholder = `${parent.get_name()}. Haa ab bak`
 
       chat_input.onkeyup  = function(){
 
