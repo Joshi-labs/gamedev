@@ -30,7 +30,7 @@ html,body{
 	padding-top: 12px;
 }
 .container{
-  height: 80px;
+  height: 13%;
   width: 50vw;
   line-height: 80px;
   background: #fff;
@@ -41,7 +41,7 @@ html,body{
   width: 100%;
 }
 .container-top{
-  height: 60px;
+  height: 11%;
   background: #fff;
   overflow: hidden;
   position: fixed;
