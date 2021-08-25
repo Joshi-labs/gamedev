@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>read</title>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+		<script>
+		  
+		  var firebaseConfig = {
+			apiKey: "AIzaSyAFmbmVdvGOeE508HF-eDCDfda7smKOGy4",
+			authDomain: "aps-talks-4186a.firebaseapp.com",
+			projectId: "aps-talks-4186a",
+			storageBucket: "aps-talks-4186a.appspot.com",
+			messagingSenderId: "88040676139",
+			appId: "1:88040676139:web:c72f0eba4de63b9b69436e"
+		  };
+		  firebase.initializeApp(firebaseConfig);
+		  
+		  function read_Data()
+		  { 
+			firebase.database().ref("messages").on("child_added", function (snapshot) {
+			
+				var html = "";
+				html += "<li>";
+					html += snapshot.val().Name + ": " + snapshot.val().Pass;
+				html += "<li>";
+			
+				document.getElementById("messages").innerHTML += html;
+			
+			});
+		  };
+		</script>
+		
+		
+    </head>
+    <body>
+
+		
+		<h1>user data read</h1>
+		
+		<br><hr><br>
+		<?php 
+		
+
+		
+		<ul id="messages"></ul> ?>
+		
+		
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>upload</title>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+		<script>
+		  
+		  var firebaseConfig = {
+			apiKey: "AIzaSyAFmbmVdvGOeE508HF-eDCDfda7smKOGy4",
+			authDomain: "aps-talks-4186a.firebaseapp.com",
+			projectId: "aps-talks-4186a",
+			storageBucket: "aps-talks-4186a.appspot.com",
+			messagingSenderId: "88040676139",
+			appId: "1:88040676139:web:c72f0eba4de63b9b69436e"
+		  };
+		  firebase.initializeApp(firebaseConfig);
+		  
+		  function write_Data()
+		  { 
+			firebase.database().ref("users/"+document.getElementById("namefield").value).set({
+				Name: document.getElementById("namefield").value, 
+				Pass: document.getElementById("passfield").value,
+				Privateorpublic: document.getElementById("privateorpublic").value,
+				Class: document.getElementById("class").value,
+				Bio: document.getElementById("bio").value
+		  })
+		  };
+		</script>
+    </head>
+    <body>
+
+		
+		<h1>user data upload</h1>
+		<input type = "text" placeholder="name" id="namefield">
+		<input type = "text" placeholder="password" id="passfield">
+		<input type = "text" placeholder="b_day" id="bdayfield">
+		<input type = "text" placeholder="Private or public" id="privateorpublic">
+		<input type = "text" placeholder="Bio" id="bio">
+		<input type = "text" placeholder="Class" id="class">
+		<button onClick = "write_Data()">submit</button>
+
+    </body>
+</html>
