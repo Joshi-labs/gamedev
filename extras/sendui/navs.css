@@ -1,0 +1,75 @@
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  height:6.5vh;
+}
+
+.navbar a {
+
+  display: inline-block;
+  color: #f2f2f2;
+  
+  width: 24%;
+  height:auto;
+  text-align:center;
+  text-decoration: none;
+  padding-top: 1.5vh;
+  padding-bottom: 3vh;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+
+.navbar-bottom {
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height:6.5vh;
+}
+
+.navbar-bottom a {
+
+  display: inline-block;
+  color: #f2f2f2;
+  
+  width: 19%;
+  height:auto;
+  text-align:center;
+  text-decoration: none;
+  padding-top: 1.5vh;
+  padding-bottom: 3vh;
+}
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+.noten {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*   function disable() {
+	 var v = document.getElementById("dis");
+         v.className += "disabledo";
+}
+
+ function enableo() { 
+	 var v = document.getElementById("dis"); 
+             v.className += "disabled";
+			 use to make a like system */

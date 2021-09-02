@@ -1,0 +1,58 @@
+ @font-face { font-family: font; src: url('Helvetica Neue LT Std 75 Bold.otf'); } 
+body {margin:0;}
+
+.text-container {
+  border-radius: 1ch /* 15px */;
+  background: #8B8B8C;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  padding-top: 0.5ch;
+  padding-bottom: 1%;
+  margin-bottom: 3%;
+
+}
+
+.message {
+  padding-top: 0.05%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: font;
+  font-size: 20px;
+}
+
+.profile-ribbon {
+	
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: font;
+  font-size: 20px;
+  /* display: inline; */
+  color: #FAD354;
+	
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 5.6%;
+  background: #fff;
+  margin-top: 0px;
+  position: absolute;
+}
+
+.responsive {
+  width: 95%;
+  height: auto;
+  padding-bottom: 1%;
+  border-radius: 15px;  /* 15px */;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+
+.thatone{
+	-webkit-user-select: none; 
+}
+
+/*      %    =     5   6   #   o   /   &nbsp;*/
